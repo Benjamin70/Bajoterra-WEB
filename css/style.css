@@ -18,6 +18,7 @@ html{
 
 body{
     font-family: var(--fuentePrincipal);
+    background: var(--coloPrimario);
     font-size: 1.6rem;
     line-height: 1.8;
 }
@@ -79,7 +80,7 @@ img{
 /** Header **/
 .header{
     min-height: 60rem;
-    background-image: url(../img/imagen-header.webp);
+    background-image: url(../img/bajoterra.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
