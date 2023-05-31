@@ -80,9 +80,78 @@ img{
 /** Header **/
 .header{
     min-height: 60rem;
-    background-image: url(../img/bajoterra_auto_x2.jpg);
+    background-image: url(../img/zyro-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center,  0rem 15rem;
     padding: 5rem 0;
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+.nombre-sitio{
+    text-align:center;
+    font-size: 8rem;
+}
+@media (min-width: 768px) { 
+    .nombre-sitio{
+        text-align: left center;
+        font-size: 10rem;
+    }
+}
+@media (min-width: 768px) { 
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) { 
+    .contacto{
+        align-items: flex-end;
+    }
+}
+.telefono{
+    display: flex;
+}
+.telefono::before{
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem;
+}
+.header a{
+    color: var(--blanco);
+    font-size: 1.9rem;
+}
+@media (min-width: 1200px) { 
+    .header a{
+        font-size: 2rem;
+    }
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+@media (min-width: 1200px) { 
+    .navegacion{
+        flex-direction: row;
+        gap: 2rem;
+    }
 }
