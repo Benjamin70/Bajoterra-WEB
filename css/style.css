@@ -5,6 +5,7 @@
     --blanco: #FFF;
     --negro: #111111;
     --gris: #343A40;
+    --morado: #251630;
 
     --fuentePrincipal: 'Krub', sans-serif;
 }
@@ -250,4 +251,66 @@ img{
 .informacion{
     text-align: center;
     text-transform: uppercase;
+}
+
+/** Footer **/
+.footer{
+    background-color: var(--morado);
+    display: flex;
+    flex-direction: column;
+    color: var(--blanco);
+}
+.footer a{
+    color: var(--blanco);
+    font-size: 1.9rem;
+}
+@media (min-width: 1200px) { 
+    .footer a{
+        font-size: 2rem;
+    }
+}
+.copyright{
+    background-color: var(--negro);
+    text-align: center;
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/** Formulario **/
+.formulario {
+    color: var(--blanco);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 2rem;
+}
+
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select { 
+    flex: 1;
+    border: 1px solid #e1e1e1;
 }
